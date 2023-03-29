@@ -1,3 +1,36 @@
+# Task
+
+Разработать React компонент, позволяющий производить множественный выбор.
+![alt text](public/image.png)
+
+**Состояния**
+
+- **Свернутое состояние.** Компонент выглядит как кнопка. Если ничего не выбрано, то на ней отображается текст: "Please select", иначе перечисленные через запятую выбранные элементы (кроме Any).
+- **Развернутое состояние.** На месте кнопки появляется инпут. Снизу выпадает список чекбоксов, ограниченный по высоте и со скроллом. Список должен отображаться поверх всех элементов на странице.
+
+**Переход между состояниями**
+
+- Разворачивание списка происходит по клику по кнопке, при этом фокус переходит на инпут.
+- Сворачивание списка происходит по клику вне компонента или при нажатии на Enter, когда инпут в фокусе. После сворачивания текст в инпуте сбрасывается.
+
+**Фильтрация**
+Чекбоксы фильтруются по введенному в инпут тексту. Чекбокс Any отображается в списке всегда.
+
+**Чекбоксы**
+
+- Чекбоксы должны быть уникальными и сортироваться в алфавитном порядке. Any всегда первый.
+- [] Any отмечен только если выбраны все чекбоксы.
+- [] При нажатии на чекбокс Any, если он не отмечен выбираются все чекбоксы, иначе - сбрасываются.
+
+**Результат**
+Нужно отобразить на странице несколько компонентов друг под другом. Если отметить чекбоксы в одном из компонентов, то в других они тут же отмечаются. Другие состояния независимы.
+
+**Данные**
+
+```
+["Oliver", "Evelyn", "William", "Emma", "James", "Ava", "Benjamin", "Sophia", "Lucas", "Isabella", "Henry", "Mia", "Alexander", "Charlotte", "Michael", "Amelia", "Ethan", "Harper", "Daniel", "Ella", "Matthew", "Avery", "Aiden", "Abigail", "Joseph", "Emily", "Samuel", "Elizabeth", "Sebastian", "Sofia", "Mason", "Eleanor", "David", "Madison", "Nicholas", "Chloe", "Josephine", "Grace", "Leo", "Hannah", "Adam", "Lily", "Andrew", "Addison", "Liam", "Natalie", "Anthony", "Aria", "Dylan", "Audrey", "Caleb", "Scarlett", "Elijah", "Victoria", "Isaac", "Aurora", "Nathan", "Layla", "Noah", "Penelope", "Owen", "Stella", "Ryan", "Lucy", "Gabriel", "Ellie", "Julian", "Lila", "Christian", "Leah", "Wyatt", "Zoe", "Eli", "Aaliyah", "Thomas", "Anna", "Charles", "Katherine", "Harrison", "Lillian", "Jackson", "Claire", "Isabelle", "Audrey", "George", "Nora", "Finn", "Ruby", "Lincoln", "Sadie", "Hunter", "Alice", "Miles", "Camila", "William", "Hazel", "Emma", "Avery", "Nathan", "Aubrey"]
+```
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
